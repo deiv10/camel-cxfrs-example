@@ -1,7 +1,7 @@
 Camel CXF Rest Example with JSON
 -----------------------------------------
 
-#####Version Used:
+##### Version Used:
 1. camel : 2.16.0
 2. CXF Version  3.1.3
 
@@ -17,7 +17,7 @@ The Example contains 3 modules
 3. CXFRS Client Module  
 
 
-#####CXFRS Service Module  
+##### CXFRS Service Module  
  		
 This exposes a CXF REST service where a client hits the  
 _http://localhost:8080/cxf-rest/services/country/{countrycode}_  
@@ -34,7 +34,7 @@ The CountryService creates a rest interface as shown below.
      
     }  
 
-#####CXFRS Common Module
+##### CXFRS Common Module
 		
 This module contains POJOs that are shared by both client and service module.  
 
@@ -44,7 +44,7 @@ This module contains POJOs that are shared by both client and service module.
 service module populates it and client for consumes it.  
 
 			
-#####CXFRS Client Module
+##### CXFRS Client Module
 		
 This module calls a REST service hosted by service module with a country code like IN, CH, GE etc to get country information in JSON format, the JSON obtained is then marshalled to a country POJO and then save to a text file.
 		
@@ -68,7 +68,7 @@ A Camel route is written that executes as below
 3. marshals the correct response to POJO
 4. saves the pojo to File.
 
-#####Setting up the Example
+##### Setting up the Example
 
 1. check out the example
 
